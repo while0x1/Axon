@@ -1,0 +1,1 @@
+Axon is an API utilizing the charli3_dendrite library to serve Cardano DEX data and facilitate direct DEX transactions. A user can request specific pool data or create a swap transaction for a selected pair on a selected dex. The swap endpoint will return the unsigned CBOR encoded transaction for a user to sign and submit
