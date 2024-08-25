@@ -22,6 +22,8 @@ if r != '':
 			time.sleep(0.2)
    
 #Fetch Specific Dex/LP Statistics
+#when swaping from A-B swap_asset will be 'lovelace' - when B-A swap-asset is the concatenation of the token PolicyId and Policy Name
+# ie for Butane  (BTN) - 'swap_asset': '016be5325fd988fea98ad422fcfd53e5352cacfced5c106a932a35a442544e'
 data = {'dex':'minswap','pair': 'ADA-MIN','swap_asset': 'lovelace', 'swap_amount': 10000000}
 r = ''
 try:
