@@ -3,6 +3,7 @@ import requests
 import time
 import sys
 from dotenv import load_dotenv
+import os
 load_dotenv()
 
 headers = {'User':os.environ["AXON_USER"]}
