@@ -7,7 +7,7 @@ headers = {'User':'be8fc95242bc59217dd8d606'}
 ##Fetch LPs
 r = ''
 try:
-	r = requests.get('http://axon.while0x1.com:8090/lps', headers=headers)
+	r = requests.get('https://axon.while0x1.com/lps', headers=headers)
 except Exception as e:
 	print(e)
 	print('Requests Error')
@@ -27,7 +27,7 @@ if r != '':
 data = {'dex':'minswap','pair': 'ADA-MIN','swap_asset': 'lovelace', 'swap_amount': 10000000}
 r = ''
 try:
-	r = requests.post('http://axon.while0x1.com:8090/poolinfo', headers=headers,json=data)
+	r = requests.post('https://axon.while0x1.com/poolinfo', headers=headers,json=data)
 except Exception as e:
 	print('Request failed')
 	print(e)
@@ -39,7 +39,7 @@ if r !='':
 data = {'dex':'minswap','pair': 'ADA-MIN', 'address': 'addr1q8qev5chh7me46y5gskrmjeawyunullgpzm6suzzf8vkshnzn3esu8nuwh0frr83sv9qgv29540vhdtxrf5hlhxs0yzqdme4ec', 'swap_asset': 'lovelace', 'swap_amount': 5000000}
 r = ''
 try:
-	r = requests.post('http://axon.while0x1.com:8090/swap', headers=headers,json=data)
+	r = requests.post('https://axon.while0x1.com/swap', headers=headers,json=data)
 except Exception as e:
 	print('Request failed')
 	print(e)
