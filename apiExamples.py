@@ -2,8 +2,10 @@ import json
 import requests
 import time
 import sys
+from dotenv import load_dotenv
+load_dotenv()
 
-headers = {'User':'be8fc95242bc59217dd8d606'}
+headers = {'User':os.environ["USER"]}
 ##Fetch LPs
 r = ''
 try:
