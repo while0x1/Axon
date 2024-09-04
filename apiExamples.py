@@ -5,7 +5,7 @@ import sys
 from dotenv import load_dotenv
 load_dotenv()
 
-headers = {'User':os.environ["USER"]}
+headers = {'User':os.environ["AXON_USER"]}
 ##Fetch LPs
 r = ''
 try:
